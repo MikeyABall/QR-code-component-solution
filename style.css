@@ -1,0 +1,75 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* ------------------------------------------- */
+/* --------------- Reset --------------------- */
+/* ------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* ------------------------------------------------- */
+/* ------------ Custom Properties ------------------ */
+/* ------------------------------------------------- */
+
+:root {
+    /* colors */
+    --white: hsl(0, 0%, 100%);
+    --lt-gray: hsl(212, 45%, 89%);
+    --gray-blue: hsl(220, 15%, 55%);
+    --drk-blue: hsl(218, 44%, 22%);
+
+    /* typography */
+    /* size */
+    --fs-400: 0.938rem; /* 15 px */
+    /* font */
+    --ff-sans: 'Outfit', sans-serif;
+}
+
+.clr-white { color: var(--white); }
+.clr-lt-gray { color: var(--lt-gray); }
+.clr-gray-blue { color: var(--gray-blue); }
+.clr-drk-blue { color: var(--drk-blue); }
+
+.bg-white { background-color: var(--white); }
+.bg-lt-gray { background-color: var(--lt-gray); }
+.bg-gray-blue { background-color: var(--gray-blue); }
+.bg-drk-blue { background-color: var(--drk-blue); }
+
+
+/* ------------------------------------------------- */
+/* -------------- General Styling ------------------ */
+/* ------------------------------------------------- */
+
+body {
+    font-family: var(--ff-sans);
+}
+
+.card {
+    margin: 50px auto;
+    max-width: 325px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px 10px 10px;
+    border-radius: 15px;
+}
+
+.qr-code {
+    max-width: 300px;
+    border-radius: 15px;
+}
+
+.text-container {
+    margin: 10px;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.section-two {
+    padding-top: 15px;
+}
